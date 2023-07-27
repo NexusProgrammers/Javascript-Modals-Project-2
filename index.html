@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <button class="show-modal" data-modal="modal1">Show modal 1</button>
+    <button class="show-modal" data-modal="modal2">Show modal 2</button>
+    <button class="show-modal" data-modal="modal3">Show modal 3</button>
+
+    <div class="overlay hidden"></div>
+
+    <div class="modal hidden" id="modal1">
+      <button class="close-modal">&times;</button>
+      <h1>I'm a custom modal 😍</h1>
+      <p>
+        This is the first custom modal with some custom content. You can add
+        more modals on the same page and customize each one individually!
+      </p>
+    </div>
+
+    <div class="modal hidden" id="modal2">
+      <button class="close-modal">&times;</button>
+      <h1>Another modal 🚀</h1>
+      <p>
+        This is the second custom modal with different content. You can add as
+        many modals as you want on the same page and they will all work
+        independently.
+      </p>
+      <button
+        class="btn-primary"
+        onclick="alert('You clicked Modal 2 button!')"
+      >
+        OK
+      </button>
+    </div>
+
+    <div class="modal hidden" id="modal3">
+      <button class="close-modal">&times;</button>
+      <h1>Modal with long content 📖</h1>
+      <div class="modal-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id
+          magna consectetur, tincidunt felis a, dignissim odio. Sed luctus
+          facilisis nunc at luctus. Duis eu justo nisl. Fusce vel metus feugiat,
+          volutpat nisi non, mollis risus. Ut eget elit in mauris maximus tempor
+          nec eu justo. Aenean id elit ut orci vulputate tincidunt non et velit.
+          Sed non maximus dui, quis euismod erat. Pellentesque eu arcu ut erat
+          blandit viverra. Nulla facilisi. In vel ex nec risus pharetra
+          elementum vel eu quam. Integer quis odio nec neque ultrices dignissim.
+          Ut eu metus id tortor laoreet bibendum eget nec ipsum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
